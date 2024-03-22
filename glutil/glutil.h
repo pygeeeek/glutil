@@ -105,8 +105,8 @@ std::string calculateMorphedText(float time) {
     size_t maxLength = std::max(_originalText.size(), _targetText.size());
 
     for (size_t i = 0; i < maxLength; ++i) {
-        float c1 = (i < _originalText.size()) ? _originalText[i] : ' '; // Handle shorter original text
-        float c2 = (i < _targetText.size()) ? _targetText[i] : ' ';       // Handle shorter target text
+        float c1 = (i < _originalText.size()) ? _originalText[i] : ' '; 
+        float c2 = (i < _targetText.size()) ? _targetText[i] : ' ';
         float morphedChar = c1 * (1.0 - t) + c2 * t;
         morphedText += static_cast<char>(morphedChar);
     }
