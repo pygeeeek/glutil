@@ -196,5 +196,8 @@ void _keyboard_timer(int value) {
 }
 /////////////////
 
-
+void PlayMusic(const string& path)
+{
+    PlaySound(path.c_str(), NULL, SND_FILENAME|SND_ASYNC|SND_LOOP);
+}
 #endif
