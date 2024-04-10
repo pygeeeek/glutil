@@ -57,6 +57,7 @@ int main(int argc, char** argv) {
     glutInitWindowSize(400, 300);
     glutCreateWindow("Modified Box Movement");
     loadImageAndStore("E:\\Desktop\\OneDrive\\Documents\\Docs Files\\ab\\resources\\ggg.bmp");
+    PlayMusic("C:/Users/abha/Downloads/sample-6s.wav");
     glutDisplayFunc(display);
     gluOrtho2D(-1, 1, -1, 1);
     glutMainLoop();
